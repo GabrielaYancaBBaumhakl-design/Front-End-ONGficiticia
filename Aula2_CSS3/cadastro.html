@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Formulário de Cadastro</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="projetos.html">Projetos</a> |
+      <a href="cadastro.html">Cadastro</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+  <fieldset>
+    <legend>Informações Pessoais</legend>
+    <label>Nome completo: <input type="text" name="nome" required></label><br>
+    <label>E-mail: <input type="email" name="email" required></label><br>
+    <label>CPF: <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required></label><br>
+    <label>Telefone: <input type="tel" name="telefone" placeholder="(00) 00000-0000" required></label><br>
+    <label>Data de Nascimento: <input type="date" name="nascimento" required></label><br>
+    <p>Deseja ser:</p>
+    <label><input type="radio" name="tipo" value="doador" required> Doador</label>
+    <label><input type="radio" name="tipo" value="voluntario" required> Voluntário</label><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Endereço</legend>
+    <label>CEP: <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required></label><br>
+    <label>Cidade: <input type="text" name="cidade" required></label><br>
+    <label>Estado: <input type="text" name="estado" required></label><br>
+    <label for="senha">Senha:</label>
+<input type="password" id="senha" name="senha" required>
+
+  </fieldset>
+
+  <button type="submit">Enviar</button>
+</form>
+
+  </main>
+<footer>
+    <p> &copy; 2025 Ong Família Brasil</p>
+  </footer>
+</body>
+</html>

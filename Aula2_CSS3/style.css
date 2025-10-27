@@ -1,0 +1,207 @@
+/* 🎨=========================
+   SISTEMA DE DESIGN (Design System)
+==========================*/
+
+:root {
+  /* Paleta de cores inspirada na bandeira do Brasil */
+  --cor-primaria: #1B5E20;       /* Verde escuro */
+  --cor-secundaria: #43A047;     /* Verde médio */
+  --cor-destaque: #FBC02D;       /* Amarelo ouro */
+  --cor-destaque-claro: #FFF176; /* Amarelo claro */
+  --cor-neutra-clara: #F9FBE7;   /* Fundo claro */
+  --cor-neutra-media: #C8E6C9;   /* Verde bem claro */
+  --cor-neutra-escura: #2E2E2E;  /* Texto escuro */
+  --cor-sucesso: #81C784;        /* Verde sucesso */
+  --cor-erro: #E53935;           /* Vermelho suave */
+
+  --fonte-principal: 'Poppins', sans-serif;
+  --tamanho-h1: 2.5rem;
+  --tamanho-h2: 2rem;
+  --tamanho-h3: 1.5rem;
+  --tamanho-texto: 1rem;
+  --tamanho-pequeno: 0.875rem;
+
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-5: 48px;
+  --espaco-6: 64px;
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--fonte-principal);
+  background-color: #E3F2FD; 
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px; 
+  color: var(--cor-neutra-escura);
+  line-height: 1.6;
+}
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: var(--espaco-3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: var(--tamanho-h1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--espaco-3);
+  padding: 0;
+  margin: var(--espaco-2) 0 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-destaque);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--espaco-3);
+  padding: var(--espaco-3);
+}
+
+.card {
+  grid-column: span 4;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: var(--espaco-3);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: var(--cor-primaria);
+  font-size: var(--tamanho-h2);
+}
+
+.card p {
+  font-size: var(--tamanho-texto);
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  padding: var(--espaco-2) var(--espaco-3);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--tamanho-texto);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 480px) {
+  .card {
+    grid-column: span 12;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: var(--espaco-2);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1201px) {
+  .card {
+    grid-column: span 3;
+  }
+}    
+footer {
+  background-color: var(--cor-destaque); 
+  color: var(--cor-primaria);            
+  text-align: center;
+  padding: var(--espaco-3);
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+}
+footer a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}   
+img {
+  display: block;
+  margin: 0 auto;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: var(--espaco-3);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: var(--espaco-1);
+  font-weight: bold;
+}
+form input {
+  width: 100%;
+  padding: var(--espaco-1);
+  margin-bottom: var(--espaco-2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  width: 100%;
+}   
