@@ -19,9 +19,12 @@ Este repositório contém as atividades das aulas de **HTML, CSS e JavaScript** 
 - index.html → Página com HTML + CSS + JS  
 - style.css → Estilos da página  
 - script.js → Código JavaScript
+- Manipulação do DOM -Implementação sistema de Single Page Application (SPA) básico;
+- Sistema de templantes JavaScript
 
 📁 **Aula4**  
-- Arquivos da aula 4 (quando adicionados)
+- Controle de Versão com Git/GitHub
+- Acessibilidade (WCAG 2.1 Nível AA)
 
 ## Tecnologias usadas
 - HTML5 (semântico)  
