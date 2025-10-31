@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ONG Família Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ONG Família Brasil - Projetos sociais que transformam vidas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="site-title">ONG Família Brasil</h1>
+    <button class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação">&#9776;</button>
+    <button id="theme-toggle" aria-label="Alternar modo escuro ou alto contraste">🌓</button>
+    <nav aria-label="Menu principal">
+      <ul class="menu" id="menu">
+        <li><a href="#" data-page="home" tabindex="0">Início</a></li>
+        <li><a href="#" data-page="projetos" tabindex="0">Projetos</a></li>
+        <li><a href="#" data-page="cadastro" tabindex="0">Cadastro</a></li>
+        <li><a href="#" data-page="login" tabindex="0">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content" tabindex="0" aria-live="polite"></main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> ONG Família Brasil. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
