@@ -25,6 +25,14 @@ Este repositório contém as atividades das aulas de **HTML, CSS e JavaScript** 
 📁 **Aula4**  
 - Controle de Versão com Git/GitHub
 - Acessibilidade (WCAG 2.1 Nível AA)
+- ## 📦 Estrutura do Projeto
+
+- **/src/** → Código fonte legível (HTML, CSS e JS originais)
+- **index.min.html**, **style.min.css**, **script.min.js** → Versões otimizadas para produção
+
+## 🚀 Otimização
+- Aplicada minificação de HTML, CSS e JS.
+- Preparado para entrega com foco em desempenho e acessibilidade.
 
 ## Tecnologias usadas
 - HTML5 (semântico)  
